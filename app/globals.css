@@ -8,14 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,8 +18,31 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.underline-effect {
+  position: relative;
+  color: #00bfff;
+  display: inline-block; 
+  transition: color 0.3s ease;
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00bfff; 
+  transition: width 0.3s ease, background-color 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.underline-effect:hover {
+  color: #ff6347; 
+}
+
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  background-color: #ff6347; 
 }
