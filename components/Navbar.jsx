@@ -5,20 +5,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import LinkNavbar from "./LinkNavbar";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const handleThemeToggle = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
 
   const handleLinkClick = () => {
     setToggleDropdown(false);
   };
 
   return (
-    <nav className="flex justify-between items-center w-full p-5">
+    <nav className="flex justify-between items-center w-full p-5 fixed top-0  bg-gray-400">
       <div>
         <p className="font-bold text-xl">Bruno Pérez</p>
       </div>
-      <div className="space-x-5 font-bold hidden md:flex">
+      <div className="space-x-5 font-bold hidden md:flex justify-center items-center">
         <LinkNavbar
           href="#about"
           name="About"
@@ -34,6 +43,19 @@ const Navbar = () => {
           name="Projects"
           className="hover:text-orange-600"
         />
+        <Button variant="outline" size="icon" onClick={handleThemeToggle}>
+          <Sun
+            className={`h-[1.2rem] w-[1.2rem] transition-all ${
+              theme === "dark" ? "rotate-0 scale-0" : "rotate-0 scale-100"
+            }`}
+          />
+          <Moon
+            className={`absolute h-[1.2rem] w-[1.2rem] transition-all ${
+              theme === "dark" ? "rotate-0 scale-100" : "rotate-90 scale-0"
+            }`}
+          />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
       </div>
 
       <div className="md:hidden flex items-center">

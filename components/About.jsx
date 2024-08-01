@@ -10,7 +10,7 @@ const About = () => {
     >
       <div className="my-5 space-y-3 md:w-1/2 w-full px-5 text-center md:text-start">
         <h1 className="text-3xl md:text-5xl font-bold">Hi, I’m Bruno</h1>
-        <h1 className="text-3xl md:text-5xl font-bold relative underline-effect w-auto">
+        <h1 className="text-3xl md:text-5xl font-bold relative w-auto text-blue-400 hover:text-[#E7983B]">
           Front-End Developer
         </h1>
       </div>

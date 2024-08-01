@@ -6,10 +6,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-start items-center h-full p-5 w-full my-5"
+      className="flex flex-col justify-center items-center h-screen px-10 w-full my-5"
     >
       <div className="w-full mb-5 flex space-x-5">
-        <h2 className="text-2xl md:text-5xl font-semibold text-start">
+        <h2 className="text-2xl md:text-5xl font-semibold text-start hover:text-[#E7983B]">
           My Skills
         </h2>
         <ImageComponent src={skills} alt="Skills"  width={40} height={20}/>
