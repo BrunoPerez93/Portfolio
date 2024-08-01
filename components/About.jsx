@@ -19,12 +19,12 @@ const About = () => {
         <LinkComponent href="https://github.com/BrunoPerez93">
           <ImageComponent src={github} alt="Logo Github" width={50} height={50} />
         </LinkComponent>
-        <LinkComponent href="www.linkedin.com/in/bruno-perez-07079324a">
-          <ImageComponent src={linkedin} alt="Logo Linkedin"  width={50} height={50}/>
+        <LinkComponent href="https://www.linkedin.com/in/bruno-perez-07079324a">
+          <ImageComponent src={linkedin} alt="Logo Linkedin" width={50} height={50}/>
         </LinkComponent>
 
-        <LinkComponent href="https://mail.google.com/">
-          <ImageComponent src={gmail} alt="Logo Gmail"  width={50} height={50}/>
+        <LinkComponent href="mailto:brunoperez24793@gmail.com?subject=Hello&body=I wanted to reach out to you regarding...">
+          <ImageComponent src={gmail} alt="Logo Gmail" width={50} height={50}/>
         </LinkComponent>
       </div>
 
