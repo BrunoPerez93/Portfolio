@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center items-center h-screen px-10 w-full my-5"
+      className="flex flex-col justify-center items-center md:h-screen h-full px-10 w-full my-5"
     >
       <div className="w-full mb-5 flex space-x-5">
         <h2 className="text-2xl md:text-5xl font-semibold text-start hover:text-[#E7983B]">

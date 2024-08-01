@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col justify-center items-center h-screen bg-slate-900 w-full text-white"
+      className="flex flex-col justify-center items-center md:h-screen h-full pb-5 bg-slate-900 w-full text-white"
     >
       <div className="my-5 space-y-3 md:w-1/2 w-full px-5 text-center md:text-start">
         <h1 className="text-3xl md:text-5xl font-bold">Hi, I’m Bruno</h1>

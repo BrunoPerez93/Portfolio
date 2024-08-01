@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center w-full p-5 fixed top-0  bg-gray-400">
+    <nav className="flex justify-between items-center w-full p-5">
       <div>
         <p className="font-bold text-xl">Bruno Pérez</p>
       </div>
@@ -61,10 +61,10 @@ const Navbar = () => {
       <div className="md:hidden flex items-center">
         <Image
           src={menu}
-          className="object-cover rounded-full"
+          className="object-cover rounded-full bg-white"
           width={37}
           height={37}
-          alt=""
+          alt="icono"
           onClick={() => setToggleDropdown(!toggleDropdown)}
         />
         {toggleDropdown && (
@@ -73,19 +73,19 @@ const Navbar = () => {
               href="#about"
               name="About"
               onClick={handleLinkClick}
-              className="bg-slate-200 w-full rounded-md hover:bg-slate-500"
+              className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
             />
             <LinkNavbar
               href="#skills"
               name="Skills"
               onClick={handleLinkClick}
-              className="bg-slate-200 w-full rounded-md hover:bg-slate-500"
+              className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
             />
             <LinkNavbar
               href="#projects"
               name="Projects"
               onClick={handleLinkClick}
-              className="bg-slate-200 w-full rounded-md hover:bg-slate-500"
+              className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
             />
           </div>
         )}
