@@ -10,7 +10,7 @@ const Footer = () => {
       <p className="text-xl md:text-3xl font-bold">Bruno Pérez</p>
       <div className="flex flex-col space-y-2 text-center text-[#E7983B]">
         <p className="text-xl text-white">Links</p>
-        <div className="flex flex-col md:flex-row md:space-x-5  justify-center items-start">
+        <div className="flex flex-col md:flex-row md:space-x-5  justify-center md:items-start items-center">
           <Link href="#about">About</Link>
           <Link href="#skills">Skills</Link>
           <Link href="#projects">Projects</Link>
