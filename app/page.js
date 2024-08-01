@@ -1,6 +1,6 @@
 import About from "@/components/About";
-import ListProjects from "@/components/ListProjects";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Skills />
-      <ListProjects />
+      <Projects/>
     </main>
   );
 }

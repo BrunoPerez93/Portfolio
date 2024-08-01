@@ -15,16 +15,16 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center items-center my-5 space-x-10 md:w-1/2 w-full px-5">
+      <div className="flex justify-center md:justify-start items-center my-5 space-x-10 md:w-1/2 w-full px-5">
         <LinkComponent href="https://github.com/BrunoPerez93">
-          <ImageComponent src={github} alt="Logo Github" />
+          <ImageComponent src={github} alt="Logo Github" width={50} height={50} />
         </LinkComponent>
         <LinkComponent href="www.linkedin.com/in/bruno-perez-07079324a">
-          <ImageComponent src={linkedin} alt="Logo Linkedin" />
+          <ImageComponent src={linkedin} alt="Logo Linkedin"  width={50} height={50}/>
         </LinkComponent>
 
         <LinkComponent href="https://mail.google.com/">
-          <ImageComponent src={gmail} alt="Logo Gmail" />
+          <ImageComponent src={gmail} alt="Logo Gmail"  width={50} height={50}/>
         </LinkComponent>
       </div>
 
