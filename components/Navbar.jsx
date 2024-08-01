@@ -68,25 +68,52 @@ const Navbar = () => {
           onClick={() => setToggleDropdown(!toggleDropdown)}
         />
         {toggleDropdown && (
-          <div className="absolute top-16 right-0 bg-white shadow-lg rounded-lg p-5 flex flex-col text-center items-center z-10 w-full space-y-3">
-            <LinkNavbar
-              href="#about"
-              name="About"
-              onClick={handleLinkClick}
-              className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
-            />
-            <LinkNavbar
-              href="#skills"
-              name="Skills"
-              onClick={handleLinkClick}
-              className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
-            />
-            <LinkNavbar
-              href="#projects"
-              name="Projects"
-              onClick={handleLinkClick}
-              className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
-            />
+          <div className="absolute top-16 right-0 bg-white shadow-lg rounded-lg p-5 flex justify-center text-center items-center z-10 w-full space-y-3">
+            <div className="flex w-full justify-between items-center space-x-2">
+              <div className="w-full flex flex-col space-y-2">
+                <LinkNavbar
+                  href="#about"
+                  name="About"
+                  onClick={handleLinkClick}
+                  className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
+                />
+                <LinkNavbar
+                  href="#skills"
+                  name="Skills"
+                  onClick={handleLinkClick}
+                  className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
+                />
+                <LinkNavbar
+                  href="#projects"
+                  name="Projects"
+                  onClick={handleLinkClick}
+                  className="bg-slate-400 w-full rounded-md hover:bg-slate-700"
+                />
+              </div>
+              <div className=" flex justify-end">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={handleThemeToggle}
+                >
+                  <Sun
+                    className={`h-[0.8rem] w-[0.8rem] transition-all ${
+                      theme === "dark"
+                        ? "rotate-0 scale-0"
+                        : "rotate-0 scale-100"
+                    }`}
+                  />
+                  <Moon
+                    className={`absolute h-[0.8rem] w-[0.8rem] transition-all ${
+                      theme === "dark"
+                        ? "rotate-0 scale-100"
+                        : "rotate-90 scale-0"
+                    }`}
+                  />
+                  <span className="sr-only">Toggle theme</span>
+                </Button>
+              </div>
+            </div>
           </div>
         )}
       </div>
