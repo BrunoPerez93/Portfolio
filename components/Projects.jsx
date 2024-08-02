@@ -166,11 +166,11 @@ const Projects = () => {
           </Card>
         </Link>
 
-        <Link href="https://music-app-cyan-one.vercel.app/" target="_blank">
+        <Link href="https://music-api-call.vercel.app/" target="_blank">
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
               <CardTitle>Music</CardTitle>
-              <CardDescription>React js + Vite + Tailwind</CardDescription>
+              <CardDescription>Next js + Shadcn/ui + Tailwind</CardDescription>
             </CardHeader>
             <CardContent>
               <ImageComponent
