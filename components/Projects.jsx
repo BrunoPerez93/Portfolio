@@ -169,7 +169,7 @@ const Projects = () => {
         <Link href="https://music-api-call.vercel.app/" target="_blank">
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
-              <CardTitle>Music</CardTitle>
+              <CardTitle>Music Api Call</CardTitle>
               <CardDescription>Next js + Shadcn/ui + Tailwind</CardDescription>
             </CardHeader>
             <CardContent>
