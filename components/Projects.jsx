@@ -68,7 +68,7 @@ const Projects = () => {
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
               <CardTitle>World Rank</CardTitle>
-              <CardDescription>React js + Tailwind</CardDescription>
+              <CardDescription>React js + Tailwind + API</CardDescription>
             </CardHeader>
             <CardContent>
               <ImageComponent
@@ -98,11 +98,28 @@ const Projects = () => {
           </Card>
         </Link>
 
+        <Link href="https://music-api-call.vercel.app/" target="_blank">
+          <Card className="h-[380px] hover:bg-gray-500">
+            <CardHeader>
+              <CardTitle>Music</CardTitle>
+              <CardDescription>Next js + Shadcn/ui + Tailwind + API</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ImageComponent
+                src={music}
+                alt="Music project"
+                width={300}
+                height={200}
+              />
+            </CardContent>
+          </Card>
+        </Link>
+
         <Link href="https://random-quots.vercel.app/" target="_blank">
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
               <CardTitle>Random Quotes</CardTitle>
-              <CardDescription>React js + Tailwind</CardDescription>
+              <CardDescription>React js + Tailwind + API</CardDescription>
             </CardHeader>
             <CardContent>
               <ImageComponent
@@ -119,7 +136,7 @@ const Projects = () => {
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
               <CardTitle>Gifs</CardTitle>
-              <CardDescription>React js + Vite</CardDescription>
+              <CardDescription>React js + Vite + API</CardDescription>
             </CardHeader>
             <CardContent>
               <ImageComponent
@@ -136,7 +153,7 @@ const Projects = () => {
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
               <CardTitle>Coffee Listing</CardTitle>
-              <CardDescription>React js + Tailwind</CardDescription>
+              <CardDescription>React js + Tailwind + API</CardDescription>
             </CardHeader>
             <CardContent>
               <ImageComponent
@@ -153,7 +170,7 @@ const Projects = () => {
           <Card className="h-[380px] hover:bg-gray-500">
             <CardHeader>
               <CardTitle>Pagination</CardTitle>
-              <CardDescription>React js + Vite + Tailwind</CardDescription>
+              <CardDescription>React js + Vite + Tailwind + API</CardDescription>
             </CardHeader>
             <CardContent>
               <ImageComponent
@@ -166,22 +183,7 @@ const Projects = () => {
           </Card>
         </Link>
 
-        <Link href="https://music-api-call.vercel.app/" target="_blank">
-          <Card className="h-[380px] hover:bg-gray-500">
-            <CardHeader>
-              <CardTitle>Music Api Call</CardTitle>
-              <CardDescription>Next js + Shadcn/ui + Tailwind</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ImageComponent
-                src={music}
-                alt="Music project"
-                width={300}
-                height={200}
-              />
-            </CardContent>
-          </Card>
-        </Link>
+      
 
       </div>
     </section>
